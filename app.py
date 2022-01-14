@@ -23,6 +23,9 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.svm import SVC
 
 def main():
+    # Get rid of unnecessary warning
+    st.set_option('deprecation.showPyplotGlobalUse', False)
+
     # Set up titles
     st.title("Binary Classification Web App")
     st.sidebar.title("Binary Classification Web App")
